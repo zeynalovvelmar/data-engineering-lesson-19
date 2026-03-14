@@ -1722,3 +1722,31 @@ NameError: name 'trigger_subsequent_dag' is not defined
 [2026-03-14T19:33:48.167+0000] {logging_mixin.py:190} INFO - [2026-03-14T19:33:48.167+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2026-03-14T19:33:48.219+0000] {logging_mixin.py:190} INFO - [2026-03-14T19:33:48.219+0000] {dag.py:4180} INFO - Setting next_dagrun for transaction_pipeline_practice to 2026-03-14 00:00:00+00:00, run_after=2026-03-15 00:00:00+00:00
 [2026-03-14T19:33:48.286+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/practice.py took 0.250 seconds
+[2026-03-14T19:34:19.307+0000] {processor.py:186} INFO - Started process (PID=2291) to work on /opt/airflow/dags/practice.py
+[2026-03-14T19:34:19.312+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/practice.py for tasks to queue
+[2026-03-14T19:34:19.320+0000] {logging_mixin.py:190} INFO - [2026-03-14T19:34:19.319+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/practice.py
+[2026-03-14T19:34:19.377+0000] {processor.py:925} INFO - DAG(s) 'transaction_pipeline_practice' retrieved from /opt/airflow/dags/practice.py
+[2026-03-14T19:34:19.494+0000] {logging_mixin.py:190} INFO - [2026-03-14T19:34:19.493+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-14T19:34:19.585+0000] {logging_mixin.py:190} INFO - [2026-03-14T19:34:19.585+0000] {dag.py:4180} INFO - Setting next_dagrun for transaction_pipeline_practice to 2026-03-14 00:00:00+00:00, run_after=2026-03-15 00:00:00+00:00
+[2026-03-14T19:34:19.642+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/practice.py took 0.361 seconds
+[2026-03-14T19:34:50.281+0000] {processor.py:186} INFO - Started process (PID=2302) to work on /opt/airflow/dags/practice.py
+[2026-03-14T19:34:50.283+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/practice.py for tasks to queue
+[2026-03-14T19:34:50.289+0000] {logging_mixin.py:190} INFO - [2026-03-14T19:34:50.288+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/practice.py
+[2026-03-14T19:34:50.332+0000] {processor.py:925} INFO - DAG(s) 'transaction_pipeline_practice' retrieved from /opt/airflow/dags/practice.py
+[2026-03-14T19:34:50.464+0000] {logging_mixin.py:190} INFO - [2026-03-14T19:34:50.463+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-14T19:34:50.516+0000] {logging_mixin.py:190} INFO - [2026-03-14T19:34:50.515+0000] {dag.py:4180} INFO - Setting next_dagrun for transaction_pipeline_practice to 2026-03-14 00:00:00+00:00, run_after=2026-03-15 00:00:00+00:00
+[2026-03-14T19:34:50.567+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/practice.py took 0.299 seconds
+[2026-03-14T19:35:21.195+0000] {processor.py:186} INFO - Started process (PID=2313) to work on /opt/airflow/dags/practice.py
+[2026-03-14T19:35:21.197+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/practice.py for tasks to queue
+[2026-03-14T19:35:21.204+0000] {logging_mixin.py:190} INFO - [2026-03-14T19:35:21.203+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/practice.py
+[2026-03-14T19:35:21.249+0000] {processor.py:925} INFO - DAG(s) 'transaction_pipeline_practice' retrieved from /opt/airflow/dags/practice.py
+[2026-03-14T19:35:21.330+0000] {logging_mixin.py:190} INFO - [2026-03-14T19:35:21.330+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-14T19:35:21.654+0000] {logging_mixin.py:190} INFO - [2026-03-14T19:35:21.654+0000] {dag.py:4180} INFO - Setting next_dagrun for transaction_pipeline_practice to 2026-03-14 00:00:00+00:00, run_after=2026-03-15 00:00:00+00:00
+[2026-03-14T19:35:21.698+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/practice.py took 0.525 seconds
+[2026-03-14T19:35:51.832+0000] {processor.py:186} INFO - Started process (PID=2325) to work on /opt/airflow/dags/practice.py
+[2026-03-14T19:35:51.834+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/practice.py for tasks to queue
+[2026-03-14T19:35:51.839+0000] {logging_mixin.py:190} INFO - [2026-03-14T19:35:51.838+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/practice.py
+[2026-03-14T19:35:51.882+0000] {processor.py:925} INFO - DAG(s) 'transaction_pipeline_practice' retrieved from /opt/airflow/dags/practice.py
+[2026-03-14T19:35:51.947+0000] {logging_mixin.py:190} INFO - [2026-03-14T19:35:51.947+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-14T19:35:51.996+0000] {logging_mixin.py:190} INFO - [2026-03-14T19:35:51.996+0000] {dag.py:4180} INFO - Setting next_dagrun for transaction_pipeline_practice to 2026-03-14 00:00:00+00:00, run_after=2026-03-15 00:00:00+00:00
+[2026-03-14T19:35:52.037+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/practice.py took 0.217 seconds
