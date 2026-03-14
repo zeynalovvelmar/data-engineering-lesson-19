@@ -1,0 +1,49 @@
+[2026-03-14T18:47:58.871+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-03-14T18:47:58.928+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: transaction_pipeline_practice.check_yesterday_data manual__2026-03-14T18:41:38.643517+00:00 [queued]>
+[2026-03-14T18:47:58.952+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: transaction_pipeline_practice.check_yesterday_data manual__2026-03-14T18:41:38.643517+00:00 [queued]>
+[2026-03-14T18:47:58.954+0000] {taskinstance.py:2867} INFO - Starting attempt 2 of 1
+[2026-03-14T18:47:58.981+0000] {taskinstance.py:2890} INFO - Executing <Task(SqlSensor): check_yesterday_data> on 2026-03-14 18:41:38.643517+00:00
+[2026-03-14T18:47:58.998+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'transaction_pipeline_practice', 'check_yesterday_data', 'manual__2026-03-14T18:41:38.643517+00:00', '--job-id', '34', '--raw', '--subdir', 'DAGS_FOLDER/practice.py', '--cfg-path', '/tmp/tmpcetf84e6']
+[2026-03-14T18:47:59.004+0000] {standard_task_runner.py:105} INFO - Job 34: Subtask check_yesterday_data
+[2026-03-14T18:47:59.004+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=1048) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-03-14T18:47:59.006+0000] {standard_task_runner.py:72} INFO - Started process 1049 to run task
+[2026-03-14T18:47:59.173+0000] {task_command.py:467} INFO - Running <TaskInstance: transaction_pipeline_practice.check_yesterday_data manual__2026-03-14T18:41:38.643517+00:00 [running]> on host 61b0a8b473fb
+[2026-03-14T18:47:59.385+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data_engineer' AIRFLOW_CTX_DAG_ID='transaction_pipeline_practice' AIRFLOW_CTX_TASK_ID='check_yesterday_data' AIRFLOW_CTX_EXECUTION_DATE='2026-03-14T18:41:38.643517+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-14T18:41:38.643517+00:00'
+[2026-03-14T18:47:59.387+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-03-14T18:47:59.451+0000] {base.py:84} INFO - Retrieving connection 'pg_conn_test'
+[2026-03-14T18:47:59.454+0000] {sql.py:102} INFO - Poking: SELECT 1 FROM public.transactions WHERE transaction_date = '2026-03-14' (with parameters None)
+[2026-03-14T18:47:59.483+0000] {base.py:84} INFO - Retrieving connection 'pg_conn_test'
+[2026-03-14T18:47:59.503+0000] {sql.py:511} INFO - Running statement: SELECT 1 FROM public.transactions WHERE transaction_date = '2026-03-14', parameters: None
+[2026-03-14T18:47:59.506+0000] {sql.py:520} INFO - Rows affected: 0
+[2026-03-14T18:47:59.517+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/providers/common/sql/hooks/sql.py:470 DeprecationWarning: Import of fetch_all_handler from the '***.providers.common.sql.hooks' module is deprecated and will
+be removed in the future. Please import it from '***.providers.common.sql.hooks.handlers'.
+[2026-03-14T18:47:59.519+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/providers/common/sql/hooks/sql.py:471 DeprecationWarning: Import of return_single_query_results from the '***.providers.common.sql.hooks' module is deprecated and will
+be removed in the future. Please import it from '***.providers.common.sql.hooks.handlers'.
+[2026-03-14T18:47:59.522+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/providers/common/sql/hooks/sql.py:486 DeprecationWarning: Import of return_single_query_results from the '***.providers.common.sql.hooks' module is deprecated and will
+be removed in the future. Please import it from '***.providers.common.sql.hooks.handlers'.
+[2026-03-14T18:48:59.538+0000] {base.py:84} INFO - Retrieving connection 'pg_conn_test'
+[2026-03-14T18:48:59.539+0000] {sql.py:102} INFO - Poking: SELECT 1 FROM public.transactions WHERE transaction_date = '2026-03-14' (with parameters None)
+[2026-03-14T18:48:59.560+0000] {base.py:84} INFO - Retrieving connection 'pg_conn_test'
+[2026-03-14T18:48:59.577+0000] {sql.py:511} INFO - Running statement: SELECT 1 FROM public.transactions WHERE transaction_date = '2026-03-14', parameters: None
+[2026-03-14T18:48:59.581+0000] {sql.py:520} INFO - Rows affected: 0
+[2026-03-14T18:49:59.597+0000] {base.py:84} INFO - Retrieving connection 'pg_conn_test'
+[2026-03-14T18:49:59.598+0000] {sql.py:102} INFO - Poking: SELECT 1 FROM public.transactions WHERE transaction_date = '2026-03-14' (with parameters None)
+[2026-03-14T18:49:59.629+0000] {base.py:84} INFO - Retrieving connection 'pg_conn_test'
+[2026-03-14T18:49:59.645+0000] {sql.py:511} INFO - Running statement: SELECT 1 FROM public.transactions WHERE transaction_date = '2026-03-14', parameters: None
+[2026-03-14T18:49:59.649+0000] {sql.py:520} INFO - Rows affected: 0
+[2026-03-14T18:50:59.669+0000] {base.py:84} INFO - Retrieving connection 'pg_conn_test'
+[2026-03-14T18:50:59.674+0000] {sql.py:102} INFO - Poking: SELECT 1 FROM public.transactions WHERE transaction_date = '2026-03-14' (with parameters None)
+[2026-03-14T18:50:59.701+0000] {base.py:84} INFO - Retrieving connection 'pg_conn_test'
+[2026-03-14T18:50:59.718+0000] {sql.py:511} INFO - Running statement: SELECT 1 FROM public.transactions WHERE transaction_date = '2026-03-14', parameters: None
+[2026-03-14T18:50:59.723+0000] {sql.py:520} INFO - Rows affected: 0
+[2026-03-14T18:51:59.750+0000] {base.py:84} INFO - Retrieving connection 'pg_conn_test'
+[2026-03-14T18:51:59.753+0000] {sql.py:102} INFO - Poking: SELECT 1 FROM public.transactions WHERE transaction_date = '2026-03-14' (with parameters None)
+[2026-03-14T18:51:59.798+0000] {base.py:84} INFO - Retrieving connection 'pg_conn_test'
+[2026-03-14T18:51:59.829+0000] {sql.py:511} INFO - Running statement: SELECT 1 FROM public.transactions WHERE transaction_date = '2026-03-14', parameters: None
+[2026-03-14T18:51:59.834+0000] {sql.py:520} INFO - Rows affected: 1
+[2026-03-14T18:51:59.836+0000] {base.py:339} INFO - Success criteria met. Exiting.
+[2026-03-14T18:51:59.905+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-03-14T18:51:59.908+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=transaction_pipeline_practice, task_id=check_yesterday_data, run_id=manual__2026-03-14T18:41:38.643517+00:00, execution_date=20260314T184138, start_date=20260314T184758, end_date=20260314T185159
+[2026-03-14T18:52:00.133+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-03-14T18:52:00.274+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-03-14T18:52:00.297+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
